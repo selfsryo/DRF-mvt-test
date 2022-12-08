@@ -33,14 +33,14 @@ docker container exec -it geodjango python3 manage.py shell -c "from world impor
 ```
 
 ## 使用データ
-以下`./geodjango/world/data`に格納（クリックでダウンロードされます）<br>
+以下`./geodjango/world/data`に格納（クリックでダウンロードされます）  
 https://thematicmapping.org/downloads/TM_WORLD_BORDERS-0.3.zip
 
 
 ## Browsable API
-コンテナを起動した状態で以下にアクセス<br>
+コンテナを起動した状態で以下にアクセス  
 http://localhost:8000/world/
 
 ## djangorestframework-mvt
-データのインポート後、以下からベクトルタイルを配信
+データのインポート後、以下からベクトルタイルを配信  
 http://localhost:8000/api/mvt/?tile={z}/{x}/{y}
