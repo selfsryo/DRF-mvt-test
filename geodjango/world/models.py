@@ -1,8 +1,7 @@
 from django.contrib.gis.db import models
+from rest_framework_mvt.managers import MVTManager
 
 class WorldBorder(models.Model):
-    # Regular Django fields corresponding to the attributes in the
-    # world borders shapefile.
     name = models.CharField(max_length=50)
     area = models.IntegerField()
     pop2005 = models.IntegerField('Population 2005')
@@ -15,9 +14,10 @@ class WorldBorder(models.Model):
     lon = models.FloatField()
     lat = models.FloatField()
 
-    # GeoDjango-specific: a geometry field (MultiPolygonField)
     mpoly = models.MultiPolygonField()
 
-    # # Returns the string representation of the model.
+    objects = models.Manager()
+    vector_tiles = MVTManager(geo_col="mpoly")
+
     def __str__(self):
         return self.name
