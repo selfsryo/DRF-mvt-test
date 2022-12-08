@@ -1,7 +1,8 @@
-# GeoDjango Official Tutorial
+# DRF-mvt-test
 
 ## 概要
 - [Django公式のGeoDjangoチュートリアル](https://docs.djangoproject.com/ja/3.2/ref/contrib/gis/tutorial/)を実施<br>
+- [djangorestframework-mvt](https://github.com/corteva/djangorestframework-mvt)を実装
 
 
 ## Docker version
