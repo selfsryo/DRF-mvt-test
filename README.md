@@ -40,3 +40,7 @@ https://thematicmapping.org/downloads/TM_WORLD_BORDERS-0.3.zip
 ## Browsable API
 コンテナを起動した状態で以下にアクセス<br>
 http://localhost:8000/world/
+
+## djangorestframework-mvt
+データのインポート後、以下からベクトルタイルを配信
+http://localhost:8000/api/mvt/?tile={z}/{x}/{y}
