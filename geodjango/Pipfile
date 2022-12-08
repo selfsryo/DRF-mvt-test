@@ -9,6 +9,7 @@ psycopg2-binary = "==2.9.1"
 djangorestframework-gis = "*"
 djangorestframework = "*"
 django-filter = "*"
+djangorestframework-mvt = "*"
 
 [dev-packages]
 
